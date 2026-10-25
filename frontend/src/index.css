@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #f4f6f9;
+  --color-surface: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-accent: #2563eb;
+}
+
+@layer base {
+  body {
+    background-color: #f4f6f9;
+    color: #0f172a;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom focus rings conforming to design specs */
+  :focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+
+  aside,
+  header,
+  footer,
+  .report-actions,
+  .report-nav {
+    display: none !important;
+  }
+
+  .lg\:pl-64 {
+    padding-left: 0 !important;
+  }
+
+  main {
+    min-height: auto !important;
+  }
+
+  .report-header,
+  .report-section {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+}

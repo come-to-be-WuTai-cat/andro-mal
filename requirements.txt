@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-multipart
+androguard
+scikit-learn==1.6.1
+xgboost
+lightgbm
+imbalanced-learn
+joblib
+numpy
+pandas
+structlog
+pytest
+httpx

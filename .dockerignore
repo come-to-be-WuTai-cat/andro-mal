@@ -1,0 +1,17 @@
+.git
+.gitignore
+.gitattributes
+.venv
+venv
+env
+**/__pycache__
+**/*.py[cod]
+.pytest_cache
+.coverage
+htmlcov
+frontend/node_modules
+frontend/dist
+frontend/build
+tmp/*
+*.apk
+*.log
